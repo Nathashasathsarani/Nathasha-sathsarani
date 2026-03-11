@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/Nathasha-sathsarani/static/css/main.81c1a5e9.css",
-    "main.js": "/Nathasha-sathsarani/static/js/main.9b5ce55d.js",
+    "main.js": "/Nathasha-sathsarani/static/js/main.c3449582.js",
     "index.html": "/Nathasha-sathsarani/index.html",
     "main.81c1a5e9.css.map": "/Nathasha-sathsarani/static/css/main.81c1a5e9.css.map",
-    "main.9b5ce55d.js.map": "/Nathasha-sathsarani/static/js/main.9b5ce55d.js.map"
+    "main.c3449582.js.map": "/Nathasha-sathsarani/static/js/main.c3449582.js.map"
   },
   "entrypoints": [
     "static/css/main.81c1a5e9.css",
-    "static/js/main.9b5ce55d.js"
+    "static/js/main.c3449582.js"
   ]
 }
