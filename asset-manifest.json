@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Nathasha-sathsarani/static/css/main.81c1a5e9.css",
+    "main.js": "/Nathasha-sathsarani/static/js/main.d2d82d9c.js",
+    "index.html": "/Nathasha-sathsarani/index.html",
+    "main.81c1a5e9.css.map": "/Nathasha-sathsarani/static/css/main.81c1a5e9.css.map",
+    "main.d2d82d9c.js.map": "/Nathasha-sathsarani/static/js/main.d2d82d9c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.81c1a5e9.css",
+    "static/js/main.d2d82d9c.js"
+  ]
+}
