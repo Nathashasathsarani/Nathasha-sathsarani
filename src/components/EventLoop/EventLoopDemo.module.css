@@ -1,0 +1,64 @@
+.wrapper {
+  padding: clamp(2.5rem, 7vw, 5rem) 0;
+  background: var(--card-gradient);
+  color: var(--color-text);
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 0.8rem;
+  opacity: 0.8;
+}
+
+.heading {
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  margin-top: 0.5rem;
+  margin-bottom: 0.75rem;
+  color: var(--color-heading);
+}
+
+.description {
+  max-width: 640px;
+  margin-bottom: 1.5rem;
+  line-height: 1.7;
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.helper {
+  font-size: 0.95rem;
+  color: var(--color-muted);
+}
+
+.logList {
+  counter-reset: steps;
+  background: var(--color-surface);
+  border-radius: 1rem;
+  padding: clamp(1rem, 4vw, 2rem);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
+  gap: 1rem;
+}
+
+.logItem {
+  border: 1px solid rgba(57, 134, 250, 0.2);
+  border-radius: 0.85rem;
+  padding: 1rem;
+  min-height: 120px;
+  background: rgba(57, 134, 250, 0.05);
+  line-height: 1.5;
+}
+
+.placeholder {
+  grid-column: 1 / -1;
+  opacity: 0.8;
+  font-style: italic;
+}
+

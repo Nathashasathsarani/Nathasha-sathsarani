@@ -1,0 +1,6 @@
+.PageContent {
+  min-height: calc(100vh - 200px);
+  background: var(--surface-gradient);
+  padding-top: clamp(1.5rem, 6vw, 4rem);
+}
+

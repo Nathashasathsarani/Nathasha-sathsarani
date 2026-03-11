@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700&display=swap");
+
+:root {
+  --color-bg: #fafaff;
+  --color-surface: #ffffff;
+  --color-heading: #151418;
+  --color-text: #1e1c26;
+  --color-muted: #777779;
+  --color-primary: #3986fa;
+  --color-primary-dark: #0b63f3;
+  --color-border: rgba(57, 134, 250, 0.25);
+  --card-gradient: radial-gradient(circle at top, #f4f7ff, #fefefe);
+  --surface-gradient: linear-gradient(180deg, #fefcff 0%, #f2f6ff 100%);
+}
+
+[data-theme="dark"] {
+  --color-bg: #050507;
+  --color-surface: #111016;
+  --color-heading: #ffffff;
+  --color-text: #f3f3f6;
+  --color-muted: #a1a1bb;
+  --color-primary: #8ab4ff;
+  --color-primary-dark: #5e8dff;
+  --color-border: rgba(138, 180, 255, 0.35);
+  --card-gradient: radial-gradient(circle at top, #181824, #050507);
+  --surface-gradient: linear-gradient(180deg, #0c0c15 0%, #000000 100%);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-weight: 400;
+  overflow-x: hidden;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  background-color: transparent;
+  transition: 0.2s ease-in;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+img,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+.btn {
+  border-radius: 999px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  font-weight: 500;
+  outline: none;
+  font-size: 1rem;
+}
+
+.btn-shadow {
+  box-shadow: 0px 2px 6px rgba(10, 10, 30, 0.15);
+}
+
+.btn-shadow:hover {
+  box-shadow: 0px 6px 20px rgba(10, 10, 30, 0.25);
+}
+
+.PrimaryBtn {
+  padding: 0.85rem 1.6rem;
+  border: none;
+  background: linear-gradient(120deg, var(--color-primary), var(--color-primary-dark));
+  color: #f6f6f6;
+}
+
+.SecondaryBtn {
+  padding: 0.78rem 1.5rem;
+  border: 2px solid var(--color-primary);
+  color: var(--color-heading);
+  background: transparent;
+  margin-right: 1rem;
+}
+
+.PrimaryBtn:hover {
+  filter: brightness(1.1);
+}
+
+.SecondaryBtn:hover {
+  background: rgba(57, 134, 250, 0.1);
+  color: var(--color-primary);
+}
+
+.Container {
+  max-width: min(1100px, 94%);
+  padding-right: 1rem;
+  padding-left: 1rem;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.BigCard {
+  padding: clamp(2rem, 5vw, 3rem);
+  border-radius: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  background: var(--color-surface);
+  box-shadow: 0px 10px 40px rgba(15, 15, 30, 0.08);
+}
+
+.AboutBio {
+  text-align: justify;
+  max-width: 750px;
+  margin: 0 auto;
+  color: var(--color-text);
+  line-height: 1.7;
+}
+
+.tagline2 {
+  text-align: left;
+  max-width: 650px;
+  margin: 1.5rem 0 2rem 0;
+  color: var(--color-heading);
+  line-height: 1.6;
+}
+
+.SectionTitle {
+  font-size: clamp(1.9rem, 4vw, 2.4rem);
+  color: var(--color-heading);
+  font-weight: 700;
+  margin-bottom: clamp(2rem, 6vw, 3.5rem);
+  position: relative;
+}
+
+.SectionTitle::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0.5rem;
+  width: 90px;
+  height: 4px;
+  border-radius: 999px;
+  background: var(--color-primary);
+}
+
+.ProjectWrapper {
+  margin-top: -1rem;
+}
+
+@media (max-width: 1000px) {
+  .Container {
+    padding: 0;
+  }
+}
+
